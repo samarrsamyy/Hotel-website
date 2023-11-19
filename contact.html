@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <h1>CONTACT US</h1>
+    
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-phone" ></i>
+                <span>
+                    <h5>Reservation </h5>
+                    <p>
+                        +90 242 524 57 18 
+                    </p>
+                </span>
+                
+            </div>
+                <div>
+                <i class="fa fa-home" ></i>
+                <span>
+                   <h5> Miracle Resort Hotel</h5>
+                   <p>
+                    üzeloba Mah. Yaşar Sobutay Bulvarı No:34 PK:07230 Lara / Antalya / TURKİYE
+                </p>
+                </span>
+                
+            </div>
+                <div>
+                <i class="fa fa-envelope-open" ></i>
+                <span>
+                   <h5> Email </h5>
+                    <p>
+                        info@miraclehotel.com
+                    </p>
+                </span>
+                
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="POST"> 
+             <input type="email" name="email" placeholder="Enter Your Email Address" required>
+            <textarea rows="8"  name="review" placeholder="Write A Review" required></textarea>
+            <button type="SUBMIT" class="hero-btn red-btn">THANK YOU</button>
+            </form>
+       
+        </div>
+</section>
+
+
+
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.4515557610785!2d30.857779415249208!3d36.85560897993719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3834b0641ca15%3A0xaae4d74a58ea7219!2sMiracle%20Hotel!5e0!3m2!1sen!2seg!4v1631475455131!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+</section>
+<!---footer--->
+<section class="footer">
+
+    <h1> SOCIAL MEDIA ACCOUNTS</h1>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-snapchat" ></i>
+    </div>
+    <p>HOPE YOU VISIT US SOON <i class="fa fa-heart-o t" ></i>  THANK YOU</p>
+</section>
+
+<!----toggle menu ----->
+
+<script>
+
+    var navlinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navlinks.style.right="0";
+    }
+
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+
+</script>
+
+</body>
+</html>

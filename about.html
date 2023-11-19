@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <h1>About Us</h1>
+    
+</section>
+<!---footer--->
+<section class="footer">
+    <div class="text">
+        <p><pre> ‎With the magnificent colors of the Mediterranean, we bring holiday lovers from all corners of the world together to have fun and relax. 
+            <br>Start your day with the turquoise water of the sea and miracle's peaceful green nature! 
+            <br>Miracle Resort Hotel's unique comfort, quality and lobby will welcome you. You will find the comfort you are looking for in all room types. 
+            <br>70% of our modernly decorated rooms have sea views. Our à la carte restaurants that bring you world cuisines together with bars, each with its own unique taste and pleasant conversation opportunities, are ready for you!‎
+            <br>Resort Hotel promises an exclusive holiday for the most enjoyable moments. With its "All Inclusive Ultra Concept" and outstanding service quality, "Miracle" can't wait to welcome you! </pre></p>
+      
+    </div>
+
+    <h1> SOCIAL MEDIA ACCOUNTS</h1>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-snapchat" ></i>
+    </div>
+    <p>HOPE YOU VISIT US SOON <i class="fa fa-heart-o t" ></i>  THANK YOU</p>
+</section>
+
+<!----toggle menu ----->
+
+<script>
+
+    var navlinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navlinks.style.right="0";
+    }
+
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+
+</script>
+
+</body>
+</html>

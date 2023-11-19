@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>WELCOME TO MIRACLE RESORT HOTEL</h1>
+    <a href="booking.html" class="book-btn">BOOK NOW PAY LATER</a>
+</div>
+</section>
+
+<!---Experience the miracle-->
+<section class="experience">
+    <h1>EXPERIENCE THE MIRACLE</h1>
+    <p>Offering ultra-all-inclusive service in Lara, the pearl of Antalya, Miracle Resort Hotel is the most special destination of perfect and unforgettable vacations with its thematic architecture spreading over a large area, spacious rooms suitable for families with sea view, green nature and the stunning view of Mediterranean Sea.
+        <br>
+        <br>
+        Located in Antalya Lara, Miracle Resort Hotel offers privileged facilities for those who want to take a unique vacation in touch with all colors and opportunities of nature by offering a combination of comfort, taste and entertainment.
+        </p> 
+
+        <div class="row">
+            <div class="E-col">
+                <h3>ROOM AND SUITES</h3>
+                <P>Standard Room  <br> Family Room <br> Suite Room  <br> Room for Disabled Guests</P>
+
+            </div>
+            <div class="E-col">
+                <h3>POOL AND SEA</h3>
+                <P>A vacation filled with fun is waiting for you with blue-flagged beach adorning the deep blue water of Mediterranean sea, aqua park, kiddy pool, pool for disabled guests and pools of different sizes for adults.</P>
+            </div>
+            <div class="E-col">
+                <h3>TASTE</h3>
+                <P>A unique taste experience is waiting for you in the restaurants and bars of Miracle Resort Hotel.The dishes prepared with fresh and high-quality ingredients offer a pleasant atmosphere with stylish presentations.</P>
+
+            </div>
+        </div>
+</section>
+<!---other services-->
+<section class="services">
+    <h1>OTHER SERVICES</h1>
+    <div class=" row">
+        <div class="S-col">
+            <img src="img/wedding.jpg">
+            <div class="layer">
+                <h3>WEDDING</h3>
+            </div>
+        </div>
+        <div class="S-col">
+            <img src="img/meeting.jpg">
+            <div class="layer">
+                <h3>MEETING</h3>
+            </div>
+        </div>
+        <div class="S-col">
+            <img src="img/entertainment.jfif">
+            <div class="layer">
+                <h3>ENTERTAINMENT</h3>
+            </div>
+        </div>
+        <div class="S-col">
+            <img src="img/spa.jfif">
+            <div class="layer">
+                <h3>SPA</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!---footer--->
+<section class="footer">
+
+    <h1> SOCIAL MEDIA ACCOUNTS</h1>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-snapchat" ></i>
+    </div>
+    <p>HOPE YOU VISIT US SOON <i class="fa fa-heart-o t" ></i>  THANK YOU</p>
+</section>
+
+<!----toggle menu ----->
+
+<script>
+
+    var navlinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navlinks.style.right="0";
+    }
+
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+
+</script>
+
+</body>
+</html>
